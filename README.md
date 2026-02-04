@@ -41,13 +41,13 @@ The core of the system is the **CNN_TUMOR** architecture, custom-built using PyT
 
 This project was developed by a multidisciplinary team of engineers who collaborated to bridge the gap between Deep Learning and Web Development:
 
-| Member Name | Role & Responsibility | GitHub Profile |
+| Member Name | Role & Responsibility | Key Contributions | GitHub Profile |
 | :--- | :--- | :--- |
-| **Fatima Alzahraa** | AI Engineer / Model Training | [@username](https://github.com/username) |
-| **Adel Tamer** | Backend Architect / API DevOps | [@adelbadran](https://github.com/adelbadran) |
-| **Alaa Hamed** | Frontend Developer / UI-UX | [@username](https://github.com/username) |
-| **Hasnaa Mohamed** | Data Scientist / Preprocessing | [@username](https://github.com/username) |
-| **Doha Mohamed** | QA / Project Management | [@DohaMohamed12](https://github.com/DohaMohamed12) |
+| **Fatima Alzahraa** | Data Scientist / Preprocessing | Data cleaning, augmentation, and normalization of MRI datasets. | [@username](https://github.com/username) |
+| **Adel Tamer** | AI Architect / Model Design |Engineering the custom 4-layer CNN architecture and layer optimization. | [@adelbadran](https://github.com/adelbadran) |
+| **Alaa Hamed** | AI Engineer / Model Training |Model training execution, metrics monitoring, and weight exportation. | [@username](https://github.com/username) |
+| **Hasnaa Mohamed** | Frontend Developer / UI-UX | Building the responsive web interface and interactive dashboard. | [@HasnaaMohamed206](https://github.com/HasnaaMohamed206) |
+| **Doha Mohamed** | Full-Stack Engineer / API DevOps | UI design, FastAPI development, and end-to-end system integration. | [@DohaMohamed12](https://github.com/DohaMohamed12) |
 
  
 ---
