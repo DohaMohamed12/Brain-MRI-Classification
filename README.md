@@ -67,6 +67,7 @@ This project was developed by a multidisciplinary team of engineers who collabor
 ---
 
 ## 💻 Installation & Setup
+ 
 
 ### 1. Backend Setup
 Ensure the pre-trained weights (`cnn_model.pth`) are placed in the server directory.
@@ -76,5 +77,12 @@ pip install torch torchvision fastapi uvicorn pillow python-multipart
 
 # Start the API server
 uvicorn api_server:app --reload
+```
+### 2. Frontend (UI)
+Install the dependencies and start the development server:
 
+```bash
+npm install
+npm run dev
+ط
 
