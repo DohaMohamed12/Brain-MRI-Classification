@@ -1,3 +1,55 @@
-# Brain MRI Classification 🧠
+# 🧠 Brain MRI Tumor Classification System
 
-This project focuses on the classification of Brain MRI scans using Deep Learning techniques. The goal is to accurately identify and classify brain tumors to assist in medical diagnosis.
+![Project Banner](https://img.shields.io/badge/AI-Healthcare-blue?style=for-the-badge&logo=ai)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+
+نظام ذكي متكامل يعتمد على الشبكات العصبية التلافيفية (CNN) لتصنيف صور الرنين المغناطيسي للدماغ والكشف عن الأورام بدقة عالية، مع واجهة مستخدم تفاعلية عصرية.
+
+---
+
+## 🚀 نظرة عامة (Project Overview)
+
+يهدف هذا المشروع إلى تقديم أداة مساعدة مدعومة بالذكاء الاصطناعي للأطباء والباحثين. يقوم النظام بتحليل صور الـ MRI وتحديد ما إذا كانت الصورة تحتوي على ورم (Tumor) أم أنها سليمة (Healthy)، مع إعطاء نسبة ثقة لكل تصنيف.
+
+
+
+## 🛠️ التكنولوجيا المستخدمة (Tech Stack)
+
+### **الخلفية والذكاء الاصطناعي (Backend & AI):**
+* **Python:** اللغة الأساسية للتطوير.
+* **PyTorch:** بناء وتدريب نموذج الـ CNN.
+* **FastAPI:** لإنشاء API سريع جداً لمعالجة الصور.
+* **Torchvision:** لمعالجة وتحويل الصور (Normalization & Resizing).
+
+### **الواجهة الأمامية (Frontend):**
+* **Next.js / React:** لبناء واجهة المستخدم.
+* **Tailwind CSS:** لتصميم واجهة عصرية (Dark Theme / Glassmorphism).
+* **Lucide React:** للأيقونات التفاعلية.
+
+---
+
+## 🏗️ التفاصيل التقنية للنموذج (Model Architecture)
+
+يعتمد النموذج على معمارية **CNN_TUMOR** التي تم بناؤها خصيصاً لهذا المشروع:
+- **Input Layer:** تستقبل صوراً بحجم $256 \times 256$ بكسل بـ 3 قنوات ألوان (RGB).
+- **Convolutional Layers:** 4 طبقات تلافيفية لزيادة استخراج الخصائص (8 -> 16 -> 32 -> 64 filters).
+- **Activation Function:** استخدام **ReLU** لضمان سرعة التعلم.
+- **Dropout Layer:** بنسبة $0.25$ لمنع الإفراط في التخصيص (Overfitting).
+- **Output:** طبقتين Fully Connected لتصنيف الصورة إلى فئتين (Tumor / Healthy).
+
+
+
+---
+
+## 💻 طريقة التشغيل (Installation & Setup)
+
+### 1️⃣ تشغيل الـ Backend
+تأكد من وجود ملف `cnn_model.pth` في مجلد السيرفر.
+```bash
+# تثبيت المكتبات
+pip install torch torchvision fastapi uvicorn pillow python-multipart
+
+# تشغيل السيرفر
+uvicorn api_server:app --reload
