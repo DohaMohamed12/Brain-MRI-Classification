@@ -5,51 +5,59 @@
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 
-نظام ذكي متكامل يعتمد على الشبكات العصبية التلافيفية (CNN) لتصنيف صور الرنين المغناطيسي للدماغ والكشف عن الأورام بدقة عالية، مع واجهة مستخدم تفاعلية عصرية.
+An end-to-end intelligent diagnostic system leveraging **Convolutional Neural Networks (CNN)** to classify Brain MRI scans. This project combines a high-performance deep learning backend with a modern, reactive web interface to assist in the early detection of brain tumors.
 
 ---
 
-## 🚀 نظرة عامة (Project Overview)
+## 🚀 Project Overview
 
-يهدف هذا المشروع إلى تقديم أداة مساعدة مدعومة بالذكاء الاصطناعي للأطباء والباحثين. يقوم النظام بتحليل صور الـ MRI وتحديد ما إذا كانت الصورة تحتوي على ورم (Tumor) أم أنها سليمة (Healthy)، مع إعطاء نسبة ثقة لكل تصنيف.
+The **Brain MRI Classifier** is designed as a decision-support tool for medical professionals. It processes raw MRI images to determine the presence of a tumor with calculated confidence intervals. 
 
 
 
-## 🛠️ التكنولوجيا المستخدمة (Tech Stack)
-
-### **الخلفية والذكاء الاصطناعي (Backend & AI):**
-* **Python:** اللغة الأساسية للتطوير.
-* **PyTorch:** بناء وتدريب نموذج الـ CNN.
-* **FastAPI:** لإنشاء API سريع جداً لمعالجة الصور.
-* **Torchvision:** لمعالجة وتحويل الصور (Normalization & Resizing).
-
-### **الواجهة الأمامية (Frontend):**
-* **Next.js / React:** لبناء واجهة المستخدم.
-* **Tailwind CSS:** لتصميم واجهة عصرية (Dark Theme / Glassmorphism).
-* **Lucide React:** للأيقونات التفاعلية.
+### Key Features:
+* **Automated Classification:** Binary classification (Tumor vs. Healthy).
+* **Instant Inference:** Real-time processing via a high-performance FastAPI backend.
+* **Modern UI:** A sleek, glassmorphic dashboard built with React and Tailwind CSS.
+* **Visual Feedback:** Probability bars and detailed diagnostic reports for each scan.
 
 ---
 
-## 🏗️ التفاصيل التقنية للنموذج (Model Architecture)
+## 🏗️ Model Architecture
 
-يعتمد النموذج على معمارية **CNN_TUMOR** التي تم بناؤها خصيصاً لهذا المشروع:
-- **Input Layer:** تستقبل صوراً بحجم $256 \times 256$ بكسل بـ 3 قنوات ألوان (RGB).
-- **Convolutional Layers:** 4 طبقات تلافيفية لزيادة استخراج الخصائص (8 -> 16 -> 32 -> 64 filters).
-- **Activation Function:** استخدام **ReLU** لضمان سرعة التعلم.
-- **Dropout Layer:** بنسبة $0.25$ لمنع الإفراط في التخصيص (Overfitting).
-- **Output:** طبقتين Fully Connected لتصنيف الصورة إلى فئتين (Tumor / Healthy).
+The core of the system is the **CNN_TUMOR** architecture, custom-built using PyTorch:
+
+-   **Input Layer:** Accepts $256 \times 256$ RGB images.
+-   **Feature Extraction:** 4 Sequential Convolutional Layers increasing in depth (8 → 16 → 32 → 64 filters) to capture intricate spatial hierarchies.
+-   **Activation:** **ReLU** units used throughout for non-linear mapping and faster convergence.
+-   **Regularization:** **Dropout ($0.25$)** applied to the fully connected layers to prevent overfitting.
+-   **Output:** Softmax-based final layer for binary probability distribution.
 
 
 
 ---
 
-## 💻 طريقة التشغيل (Installation & Setup)
+## 🛠️ Tech Stack
 
-### 1️⃣ تشغيل الـ Backend
-تأكد من وجود ملف `cnn_model.pth` في مجلد السيرفر.
+### **Backend & AI**
+* **Python / PyTorch:** Model development and training.
+* **FastAPI:** Asynchronous API gateway for low-latency inference.
+* **Torchvision:** Image preprocessing, resizing, and normalization using ImageNet statistics.
+
+### **Frontend**
+* **Next.js / React:** Responsive and dynamic user interface.
+* **Tailwind CSS:** Modern styling and dark-mode optimization.
+* **Lucide React:** High-quality iconography.
+
+---
+
+## 💻 Installation & Setup
+
+### 1. Backend Setup
+Ensure the pre-trained weights (`cnn_model.pth`) are placed in the server directory.
 ```bash
-# تثبيت المكتبات
+# Install dependencies
 pip install torch torchvision fastapi uvicorn pillow python-multipart
 
-# تشغيل السيرفر
+# Start the API server
 uvicorn api_server:app --reload
