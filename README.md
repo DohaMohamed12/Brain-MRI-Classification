@@ -61,3 +61,20 @@ pip install torch torchvision fastapi uvicorn pillow python-multipart
 
 # Start the API server
 uvicorn api_server:app --reload
+
+
+---
+
+## 👥 Meet the Team
+
+This project was developed by a multidisciplinary team of engineers who collaborated to bridge the gap between Deep Learning and Web Development:
+
+| Member Name | Role & Responsibility | GitHub Profile |
+| :--- | :--- | :--- |
+| **Member 1** | AI Engineer / Model Training | [@username](https://github.com/username) |
+| **Member 2** | Backend Architect / API DevOps | [@username](https://github.com/username) |
+| **Member 3** | Frontend Developer / UI-UX | [@username](https://github.com/username) |
+| **Member 4** | Data Scientist / Preprocessing | [@username](https://github.com/username) |
+| **Member 5** | QA / Project Management | [@username](https://github.com/username) |
+
+---
