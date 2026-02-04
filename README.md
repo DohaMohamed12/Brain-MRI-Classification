@@ -44,7 +44,7 @@ This project was developed by a multidisciplinary team of engineers who collabor
 | Member Name | Role & Responsibility | GitHub Profile |
 | :--- | :--- | :--- |
 | **Fatima Alzahraa** | AI Engineer / Model Training | [@username](https://github.com/username) |
-| **Adel Tamer** | Backend Architect / API DevOps | [@username](https://github.com/username) |
+| **Adel Tamer** | Backend Architect / API DevOps | [@adelbadran](https://github.com/adelbadran) |
 | **Alaa Hamed** | Frontend Developer / UI-UX | [@username](https://github.com/username) |
 | **Hasnaa Mohamed** | Data Scientist / Preprocessing | [@username](https://github.com/username) |
 | **Doha Mohamed** | QA / Project Management | [@DohaMohamed12](https://github.com/DohaMohamed12) |
