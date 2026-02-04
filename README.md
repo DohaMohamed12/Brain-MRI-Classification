@@ -43,11 +43,11 @@ This project was developed by a multidisciplinary team of engineers who collabor
 
 | Member Name | Role & Responsibility | GitHub Profile |
 | :--- | :--- | :--- |
-| **Member 1** | AI Engineer / Model Training | [@username](https://github.com/username) |
-| **Member 2** | Backend Architect / API DevOps | [@username](https://github.com/username) |
-| **Member 3** | Frontend Developer / UI-UX | [@username](https://github.com/username) |
-| **Member 4** | Data Scientist / Preprocessing | [@username](https://github.com/username) |
-| **Member 5** | QA / Project Management | [@username](https://github.com/username) |
+| **Fatima Alzahraa** | AI Engineer / Model Training | [@username](https://github.com/username) |
+| **Adel Tamer** | Backend Architect / API DevOps | [@username](https://github.com/username) |
+| **Alaa Hamed** | Frontend Developer / UI-UX | [@username](https://github.com/username) |
+| **Hasnaa Mohamed** | Data Scientist / Preprocessing | [@username](https://github.com/username) |
+| **Doha Mohamed** | QA / Project Management | [@DohaMohamed12](https://github.com/DohaMohamed12) |
 
  
 ---
