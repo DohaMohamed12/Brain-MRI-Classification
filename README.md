@@ -7,6 +7,8 @@
 
 An end-to-end intelligent diagnostic system leveraging **Convolutional Neural Networks (CNN)** to classify Brain MRI scans. This project combines a high-performance deep learning backend with a modern, reactive web interface to assist in the early detection of brain tumors.
 
+![Annotation 2026-02-04 130909](https://github.com/user-attachments/assets/f4e49707-0691-4369-8328-e0f35e691fbb)
+
 ---
 
 ## 🚀 Project Overview
@@ -44,7 +46,7 @@ This project was developed by a multidisciplinary team of engineers who collabor
 | Member Name | Role & Responsibility | GitHub Profile |
 | :--- | :--- | :--- |
 | **Fatima Alzahraa** | Data Scientist / Preprocessing | [@username](https://github.com/username) |
-| **Adel Tamer** | AI Architect / Model Design | [@adelbadran](https://github.com/adelbadran) |
+| **Adel Tamer** | AI Engineer / Model Architecture | [@adelbadran](https://github.com/adelbadran) |
 | **Alaa Hamed** | AI Engineer / Model Training | [@Alaa-dev524](https://github.com/Alaa-dev524) |
 | **Hasnaa Mohamed** | Frontend Developer / UI-UX | [@HasnaaMohamed206](https://github.com/HasnaaMohamed206) |
 | **Doha Mohamed** | Full-Stack Engineer / API DevOps | [@DohaMohamed12](https://github.com/DohaMohamed12) |
